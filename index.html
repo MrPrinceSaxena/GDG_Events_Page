@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GDG GU DevFest 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-dot blue"></span>
+      <span class="logo-dot red"></span>
+      <span class="logo-dot yellow"></span>
+      <span class="logo-text">GDG Galgotias</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#register">Register</a>
+      <a href="#location">Location</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <!-- Hero + Countdown -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>GDG GU DevFest 2025</h1>
+      <p class="hero-tagline">
+        A community-powered developer festival at Galgotias University.  
+        Learn. Build. Connect.
+      </p>
+      <div class="hero-cta">
+        <a href="#register" class="primary-btn">Register Now</a>
+        <a href="#highlights" class="ghost-btn">View Highlights</a>
+      </div>
+      <div class="countdown">
+        <h2>Event starts in</h2>
+        <div class="countdown-grid">
+          <div class="time-box">
+            <span id="days">00</span>
+            <small>Days</small>
+          </div>
+          <div class="time-box">
+            <span id="hours">00</span>
+            <small>Hours</small>
+          </div>
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <small>Mins</small>
+          </div>
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <small>Secs</small>
+          </div>
+        </div>
+        <p id="countdown-note" class="countdown-note"></p>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <p class="pill pill-outline">Upcoming Event</p>
+      <h3>On-campus at Galgotias University</h3>
+      <ul class="hero-meta">
+        <li><strong>Date:</strong> 10 January 2026</li>
+        <li><strong>Time:</strong> 10:00 AM – 4:00 PM</li>
+        <li><strong>Track:</strong> Web · Cloud · AI</li>
+      </ul>
+      <p class="hero-small">
+        Limited seats. No registration fee. Open to all tech enthusiasts.
+      </p>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section id="highlights" class="section">
+    <div class="section-header">
+      <h2>Event Highlights</h2>
+      <p>Handpicked sessions to level up your developer journey.</p>
+    </div>
+
+    <div class="card-grid">
+      <article class="card">
+        <h3>Keynote: Build with AI</h3>
+        <p>
+          Learn how to integrate generative AI into real-world apps using Google Cloud tools,
+          ML APIs, and best practices from industry experts.
+        </p>
+        <span class="tag">AI · Cloud</span>
+      </article>
+
+      <article class="card">
+        <h3>Hands-on Web Workshop</h3>
+        <p>
+          Build and deploy a full-stack web app in one afternoon using modern web tooling,
+          Firebase, and best UX patterns.
+        </p>
+        <span class="tag">Web · Firebase</span>
+      </article>
+
+      <article class="card">
+        <h3>Community Lightning Talks</h3>
+        <p>
+          Fast-paced talks by students & devs around GU on projects, internships, open-source and
+          cracking tech interviews.
+        </p>
+        <span class="tag">Community</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="section schedule">
+    <div class="section-header">
+      <h2>Event Schedule</h2>
+      <p>A quick timeline so you never miss your favorite session.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time">10:00 AM</div>
+        <div class="content">
+          <h3>Check-in & Networking</h3>
+          <p>Registration desk, swag collection, and meet fellow attendees.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time">11:00 AM</div>
+        <div class="content">
+          <h3>Keynote: Build with Google AI</h3>
+          <p>Discover what's new in Google Developer Ecosystem and AI.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time">01:00 PM</div>
+        <div class="content">
+          <h3>Hands-on Coding Workshop</h3>
+          <p>Guided coding session in small groups with mentors.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time">03:00 PM</div>
+        <div class="content">
+          <h3>Lightning Talks & Closing</h3>
+          <p>Community talks, Q&amp;A, and closing photo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="register" class="section">
+    <div class="section-header">
+      <h2>Register for GDG GU DevFest</h2>
+      <p>Fill in your details and we’ll reserve a seat for you.</p>
+    </div>
+
+    <div class="form-card">
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="name">Full Name <span>*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Prince Saxena" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="college">College / Organization <span>*</span></label>
+          <input type="text" id="college" name="college" required placeholder="Galgotias University" />
+        </div>
+
+        <div class="form-group">
+          <label for="interest">Interest Area <span>*</span></label>
+          <select id="interest" name="interest" required>
+            <option value="">Select an area</option>
+            <option value="web">Web Development</option>
+            <option value="android">Android / Flutter</option>
+            <option value="cloud">Cloud & DevOps</option>
+            <option value="ai">AI / ML</option>
+            <option value="other">Others</option>
+          </select>
+        </div>
+
+        <button type="submit" class="primary-btn full-width">Submit Registration</button>
+      </form>
+
+      <div id="form-success" class="form-success hidden">
+        <h3>🎉 Registration Received!</h3>
+        <p>
+          Thank you for registering for <strong>GDG GU DevFest 2025</strong>.  
+          A confirmation email simulation has been sent to your inbox.
+        </p>
+        <p class="small">
+          (In a real app, this is where we'd trigger an actual email using a backend or a
+          service like Firebase / SendGrid.)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section id="location" class="section location">
+    <div class="section-header">
+      <h2>Venue & Location</h2>
+      <p>Join us at Galgotias University, Greater Noida.</p>
+    </div>
+
+    <div class="location-grid">
+      <div>
+        <h3>On Campus</h3>
+        <p>
+          <strong>Auditorium, Block A</strong><br />
+          Galgotias University<br />
+          Yamuna Expressway, Greater Noida, Uttar Pradesh
+        </p>
+        <p class="small">
+          Please carry your college ID card. Entry subject to registration confirmation.
+        </p>
+      </div>
+
+      <div class="map-placeholder">
+        <!-- You can replace this iframe src with an actual Google Maps embed of Galgotias -->
+        <iframe
+          title="Galgotias University Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.212894315853!2d77.498!3d28.281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff7d3b63b15%3A0x3d44b81e5a2122b!2sGalgotias%20University!5e0!3m2!1sen!2sin!4v1700000000000"
+          width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div>
+        <h3>GDG Galgotias</h3>
+        <p class="small">
+          A Google Developer Group chapter empowering students & developers at Galgotias
+          University through events, workshops, and community learning.
+        </p>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="#" target="_blank">🐦 Twitter</a></li>
+          <li><a href="#" target="_blank">📸 Instagram</a></li>
+          <li><a href="#" target="_blank">💼 LinkedIn</a></li>
+          <li><a href="#" target="_blank">▶️ YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer-bottom small">
+      © 2025 GDG Galgotias (Hypothetical Event Project). Built with ♥ for Task 2.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
